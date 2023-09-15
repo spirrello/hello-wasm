@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: "16.x"
           registry-url: "https://npm.pkg.github.com"
-          scope: "@octocat"
+          scope: "@spirrello"
       - run: npm publish
         working-directory: pkg/
         env:
