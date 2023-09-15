@@ -13,11 +13,8 @@ jobs:
         with:
           node-version: "16.x"
           registry-url: "https://npm.pkg.github.com"
-          # Defaults to the user or organization that owns the workflow file
           scope: "@octocat"
-      - run: pwd
-      - run: ls -ltr fathom
       - run: npm publish
-        working-directory: fathom/
+        working-directory: pkg/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
