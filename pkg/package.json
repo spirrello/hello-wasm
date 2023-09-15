@@ -1,0 +1,27 @@
+{
+  "name": "hello-wasm",
+  "collaborators": [
+    "spirrello <spirrello@gmail.com>"
+  ],
+  "description": "Learning how to build Wasm apps.",
+  "version": "0.1.0",
+  "license": "?",
+  "repository": {
+    "type": "git",
+    "url": "github.com/spirrello/hello-wasm"
+  },
+  "files": [
+    "hello_wasm_bg.wasm",
+    "hello_wasm.js",
+    "hello_wasm_bg.js",
+    "hello_wasm.d.ts",
+    "LICENSE_APACHE",
+    "LICENSE_MIT"
+  ],
+  "module": "hello_wasm.js",
+  "types": "hello_wasm.d.ts",
+  "sideEffects": [
+    "./hello_wasm.js",
+    "./snippets/*"
+  ]
+}
